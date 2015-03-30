@@ -1,5 +1,7 @@
 # Theme #02: Silver Bullet
 
+Static preview: http://dimensionslip.tumblr.com/preview/silverbullet
+
 Release post: http://dimensionslip.tumblr.com/post/50095144686/theme-02-silver-bullet-credit-bg-sample
 
 Support tag: http://dimensionslip.tumblr.com/tagged/!theme02
