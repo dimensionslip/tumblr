@@ -1,0 +1,660 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<!--
+[#1: Social Links Page]
+Page by DimensionSlip
+http://dimensionslip.tumblr.com
+
+DO NOT REMOVE THIS PART OR THE CREDIT LINK
+
+This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+http://creativecommons.org/licenses/by-nc-nd/4.0/deed.en_US
+-->
+
+<head>
+
+  <title>{Title} - Social Links</title>
+  <link rel="shortcut icon" href="{Favicon}">
+  <link rel="alternate" type="application/rss+xml" href="{RSS}">
+  
+  <link href='http://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
+  
+<style type="text/css">
+
+  body {
+    font-size: 12px; 
+    background-image: url('http://i.imgur.com/T4zcnvX.jpg');
+    background-repeat: repeat;  
+    font-family: Verdana; 
+    background-color: #000; 
+    padding: 0px; 
+    color: #fce4e4;
+    text-align:left;
+  }
+
+  a img { 
+    border: none;
+    text-decoration: none;
+  }
+
+  a:link, a:active, a:visited {
+    color: #b5bdc0;
+    text-decoration:none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+ 
+  a:hover{
+    color:#fff;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+ 
+  b {
+    color: #;
+  }
+  
+  i {
+    color: #;
+    font-face: Times;
+  }
+ 
+  h1{
+    color: #fff;
+    font-family: georgia;
+    font-size:25px;
+    font-weight:bold;
+    margin:0px;
+    padding:0px;
+    text-align:left;
+  }
+ 
+  h2{
+    color:#3e4241;
+    font-family: Georgia;
+    font-size:20px;
+    margin:0px;
+    padding:0px;
+    padding-bottom: 5px;
+    text-align:right;
+    border-bottom: 1px dashed #d5d6fd;
+  }
+
+  #page_title {
+    color: #fff;
+    font-family: 'Noto Serif', serif;
+    font-size:25px;
+    font-weight:bold;
+    margin-left:80px;
+    padding:0px;
+    text-align:left;
+  }
+  
+  #links{
+    text-align: center;
+    width: 750px;
+    height: 25px;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    background-color: #acb1a6;
+  }
+ 
+ .page_number{
+   cursor: pointer;
+   cursor: hand;
+   display: inline-block;
+   *display: inline;
+   zoom: 1;
+   margin-left: 2px;
+   text-align: center;
+ }
+ 
+ .page_number img{
+   width: 50px;
+ }
+ 
+ .arcana_card{
+   border: 2px solid #000;
+ }
+ 
+ .arcana_card:hover{
+   border: 2px solid #11427c;
+ }
+ 
+ .highlight_page{
+   background-color: #FD9B9B;
+   color: #702525;
+ }
+
+  #container {
+    margin: 0 auto;
+    width: 750px;
+  }
+ 
+  #menu{
+    margin-top: 100px;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 250px;
+    position: fixed;
+    background-color: black;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+  }
+ 
+  #arcana_desc{
+    position: fixed;
+    display: inline-block;
+    background-image: url('http://i.imgur.com/sHgg9wV.png');
+    /*background-color: #1C1C1C;*/
+    *display: inline;
+    zoom: 1;
+    margin-top: 100px;
+    margin-left: 260px;
+    width: 480px;
+    height: 430px;
+    border: 5px solid #A0A0A0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  #header{
+    margin-top: 10px;
+    position: fixed;
+    width: 750px;
+  }
+ 
+  #rank_up{
+    position: fixed;
+    margin-left: 320px;
+    margin-top: -1px;
+    z-index: -1;
+    width: 200px;
+  }
+ 
+  #card_back {
+    width: 80px;
+    position: fixed;
+    margin-top: -30px;
+  }
+  
+  .arcana{
+    margin: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .button_link {
+    background-color: #E9E9E9;
+    color:#702525;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin-left: 5px;
+    margin-top: 2px;
+    padding: 3px;
+    width: 70px;
+    text-align: center;
+    vertical-align: middle;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button_link:hover{
+    background-color: #292929;
+    color: white;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  
+  
+  /*Person*/
+  .icon{
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 70px;
+    text-align: center;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+  }
+  
+  .icon img{
+    width: 60px;
+    border: 5px solid #292929;
+  }
+  
+  .rank {
+    background-color: #292929;
+    text-align: center;
+  }
+  
+  .person{
+    width: 440px;
+    padding: 5px;
+    margin: 3px;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    font-size: 10px;
+  }
+  
+  .details{
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top;
+    width: 350px;
+  }
+  
+  .name_cont {
+    background-color: #292929;
+    width: 350px;
+    height: 20px;
+    padding: 2px;
+    vertical-align: middle;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .name_cont {
+    color: #fff;
+  }
+  
+  .name_cont:hover .title{
+    background-color: #292929;
+    color: white;
+  }
+  
+  .name_cont:hover {
+    background-color: white;
+    width: 370px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .name_cont:hover .name{
+    color: #292929;
+  }
+  
+  .name {
+    font-family: 'Quattrocento', serif;
+  }
+  
+  .description {
+    padding: 2px;
+    width: 350px;
+  }
+  
+  .description {
+    margin-bottom: 2px;
+    color: #292929;
+  }
+  
+  .title {
+    text-align: center;
+    color: #292929;
+    margin-left: 2px;
+    padding: 1px 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    background-color: white;
+    font-family: 'Ovo', serif;
+  }
+ 
+</style>
+
+</head>
+ 
+<body>
+ 
+<div id="container">
+
+<div id="header">
+  <img id="card_back" src="http://i.imgur.com/sDzOFHV.png"/>
+  <div id="page_title">Social Links <img id="rank_up" src="http://i.imgur.com/f9eMFzV.png" /></div>
+  <div id="links">
+    <a href="/"><div class="button_link">main</div></a>
+    <a href="/ask"><div class="button_link">ask</div></a>
+    <a href="http://dimensionslip.tumblr.com" title="Coded by DimensionSlip"><div class="button_link">credit</div></a>
+  </div>
+</div>
+
+<div id="menu">
+  <div name="0" class="page_number">
+    <a href="#fool"><img src="http://i.imgur.com/mQasCWY.png" title="Fool" class="arcana_card" /></a>
+  </div>
+  <div name="1" class="page_number">
+    <a href="#magician"><img src="http://i.imgur.com/5VrLxnm.png" title="Magician" class="arcana_card" /></a>
+  </div>
+  <div name="2" class="page_number">
+    <a href="#priestess"><img src="http://i.imgur.com/4E7JPrz.png" title="Priestess" class="arcana_card" /></a>
+  </div>
+  <div name="3" class="page_number">
+    <a href="#empress"><img src="http://i.imgur.com/ILDWGyB.png" title="Empress" class="arcana_card" /></a>
+  </div>
+  <div name="4" class="page_number">
+    <a href="#emperor"><img src="http://i.imgur.com/S2tNQ4N.png" title="Emperor" class="arcana_card" /></a>
+  </div>
+  <div name="5" class="page_number">
+    <a href="#hierophant"><img src="http://i.imgur.com/YJ55LRe.png" title="Hierophant" class="arcana_card" /></a>
+  </div>
+  <div name="6" class="page_number">
+    <a href="#lovers"><img src="http://i.imgur.com/c3mzloM.png" title="Lovers" class="arcana_card" /></a>
+  </div>
+  <div name="7" class="page_number">
+    <a href="#chariot"><img src="http://i.imgur.com/CvYLRiY.png" title="Chariot" class="arcana_card" /></a>
+  </div>
+  <div name="8" class="page_number">
+    <a href="#justice"><img src="http://i.imgur.com/qv9VGcr.png" title="Justice" class="arcana_card" /></a>
+  </div>
+  <div name="9" class="page_number">
+    <a href="#hermit"><img src="http://i.imgur.com/Yyb7nZt.png" title="Hermit" class="arcana_card" /></a>
+  </div>
+  <div name="10" class="page_number">
+    <a href="#fortune"><img src="http://i.imgur.com/hYTtGEY.png" title="Fortune" class="arcana_card" /></a>
+  </div>
+  <div name="11" class="page_number">
+    <a href="#strength"><img src="http://i.imgur.com/O8ImBFj.png" title="Strength" class="arcana_card" /></a>
+  </div>
+  <div name="12" class="page_number">
+    <a href="#hanged_man"><img src="http://i.imgur.com/ulK1cPT.png" title="Hanged Man" class="arcana_card" /></a>
+  </div>
+  <div name="13" class="page_number">
+    <a href="#death"><img src="http://i.imgur.com/gE274Dn.png" title="Death" class="arcana_card" /></a>
+  </div>
+  <div name="14" class="page_number">
+    <a href="#temperance"><img src="http://i.imgur.com/gP7seHF.png" title="Temperance" class="arcana_card" /></a>
+  </div>
+  <div name="15" class="page_number">
+    <a href="#devil"><img src="http://i.imgur.com/88Lt9Lu.png" title="Devil" class="arcana_card" /></a>
+  </div>
+  <div name="16" class="page_number">
+    <a href="#tower"><img src="http://i.imgur.com/qRzP4i9.png" title="Tower" class="arcana_card" /></a>
+  </div>
+  <div name="17" class="page_number">
+    <a href="#star"><img src="http://i.imgur.com/tzOhb0p.png" title="Star" class="arcana_card" /></a>
+  </div>
+  <div name="18" class="page_number">
+    <a href="#moon"><img src="http://i.imgur.com/myoCE5H.png" title="Moon" class="arcana_card" /></a>
+  </div>
+  <div name="19" class="page_number">
+    <a href="#sun"><img src="http://i.imgur.com/Pofamly.png" title="Sun" class="arcana_card" /></a>
+  </div>
+  <div name="20" class="page_number">
+    <a href="#judgement"><img src="http://i.imgur.com/QwI84WJ.png" title="Judgement" class="arcana_card" /></a>
+  </div>
+  <div name="21" class="page_number">
+    <a href="#world"><img src="http://i.imgur.com/q2RJLzm.png" title="World" class="arcana_card" /></a>
+  </div>
+</div>
+
+<div id="arcana_desc">
+
+  <div id="fool" class="arcana">
+    <a name="fool"></a>
+    <h2>0. Fool</h2>
+   
+    <!-- Skeleton for sample person-->
+    <div class="person">
+      <div class="icon">
+        <!-- Rank is optional, can be removed -->
+        <div class="rank">Rank X</div>
+        <!-- Replace src with the avatar you want-->
+        <img src="http://24.media.tumblr.com/avatar_993114f8bcb8_64.png"/>
+      </div>
+      <div class="details">
+        <a href="http://LINK TO THE PERSON'S TUMBLR">
+        <div class="name_cont">
+          <span class="title">TITLE GOES HERE</span>
+          <span class="name">NAME</span>
+        </div>
+        </a>
+        <div class="description">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br/>
+        </div>
+      </div>
+    </div>
+    <!-- End skeleton for sample person-->
+    
+    <!-- Without Rank view, copy-paste this instead if you want the version without the rank -->
+    <div class="person">
+      <div class="icon">
+        <!-- Replace src with the avatar you want-->
+        <img src="http://24.media.tumblr.com/avatar_993114f8bcb8_64.png"/>
+      </div>
+      <div class="details">
+        <a href="http://LINK TO THE PERSON'S TUMBLR">
+        <div class="name_cont">
+          <span class="title">NO RANK</span>
+          <span class="name">NAME</span>
+        </div>
+        </a>
+        <div class="description">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br/>
+        </div>
+      </div>
+    </div>
+    <!-- End skeleton for without rank person-->
+    
+  </div>
+  
+  <div id="magician" class="arcana">
+    <a name="magician"></a>
+    <h2>I. Magician</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="priestess" class="arcana">
+    <a name="priestess"></a>
+    <h2>II. Priestess</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="empress" class="arcana">
+    <a name="empress"></a>
+    <h2>III. Empress</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="emperor" class="arcana">
+    <a name="emperor"></a>
+    <h2>IV. Emperor</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="hierophant" class="arcana">
+    <a name="hierophant"></a>
+    <h2>V. Hierophant</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="lovers" class="arcana">
+    <a name="lovers"></a>
+    <h2>VI. Lovers</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="chariot" class="arcana">
+    <a name="chariot"></a>
+    <h2>VII. Chariot</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="justice" class="arcana">
+    <a name="justice"></a>
+    <h2>VIII. Justice</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="hermit" class="arcana">
+    <a name="hermit"></a>
+    <h2>IX. Hermit</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="fortune" class="arcana">
+    <a name="fortune"></a>
+    <h2>X. Fortune</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="strength" class="arcana">
+    <a name="strength"></a>
+    <h2>XI. Strength</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="hanged_man" class="arcana">
+    <a name="hanged_man"></a>
+    <h2>XII. Hanged Man</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="death" class="arcana">
+    <a name="death"></a>
+    <h2>XIII. Death</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="temperance" class="arcana">
+    <a name="temperance"></a>
+    <h2>XIV. Temperance</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="devil" class="arcana">
+    <a name="devil"></a>
+    <h2>XV. Devil</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="tower" class="arcana">
+    <a name="tower"></a>
+    <h2>XVI. Tower</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="star" class="arcana">
+    <a name="star"></a>
+    <h2>XVII. Star</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="moon" class="arcana">
+    <a name="moon"></a>
+    <h2>XVIII. Moon</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="sun" class="arcana">
+    <a name="sun"></a>
+    <h2>XIX. Sun</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="judgement" class="arcana">
+    <a name="judgement"></a>
+    <h2>XX. Judgement</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+  <div id="world" class="arcana">
+    <a name="world"></a>
+    <h2>XXI. World</h2>
+    <!-- Start paste person data here-->
+    
+    <!-- End paste person data DO NOT PASTE BEYOND THIS POINT-->
+  </div>
+  
+</div>
+
+</div>
+ 
+</body>
+</html>
