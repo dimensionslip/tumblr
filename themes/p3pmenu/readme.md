@@ -1,6 +1,10 @@
 # Theme #01: P3P Menu
 
+Static Preview: http://dimensionslip.tumblr.com/preview/p3pmenu
+
 Release post: http://dimensionslip.tumblr.com/post/48980388042/theme-01-p3p-menu-credit-audio-post-tutorial
+
+Support tag: http://dimensionslip.tumblr.com/tagged/!theme01
 
 ## About
 Theme #01, aka the product of leafing through Tumblr’s custom theme documentation and being extremely anal for the past few days. Intended to be a simple follower tribute for one of my other blogs.
